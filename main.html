@@ -4,39 +4,53 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Final Project</title>
     <link rel="stylesheet" href="main.css">
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.7.4/dist/vue.js"></script>
     </head>
     <body>
     <h1>The Coffee Shop </h1>
-    <!-- Adding Navigation Bar-->
+
+    <div id="name">
+      <input class="nameentry" type="text" v-model="name" placeholder="Your Name ...">
+      <h1 class=" title">{{ message }} {{ name }} </h1>
+      </div>
+
+      <!-- Adding Navigation Bar-->
     <div class="topnav">
+      <!-- Home Button in Navigation Bar -->
       <a class="active" href="#home">Home</a>
+      <!-- Shop Button in Navigation Bar -->
       <a href="#shop">Shop Coffee</a>
       <div class="dropdown">
             <!-- Dropdown Menu for order a drink -->
-        <button class="dropbtn">Order a Drink
+          <button class="dropbtn">Order a Drink
           <i class="fa fa-caret-down"></i>
-        </button>
+          </button>
         <div class="dropdown-content">
-          <a href="#">UberEats</a>
-          <a href="#">Doordash</a>
-          <a href="#">Deliveroo</a>
+          <!-- Links have been added of their Respective Website for Functioning of Each Button -->
+          <a href="https://www.ubereats.com/au">UberEats</a>
+          <a href="https://www.doordash.com/en-AU">Doordash</a>
+          <a href="https://www.deliveroo.com.au/">Deliveroo</a>
         </div>
-      </div> 
-      <!-- Dropdown Menu for Recepies -->
-      <div class="dropdown">
-        <button class="dropbtn">View Recepies
+        </div> 
+        <!-- Dropdown Menu for Recepies -->
+        <div class="dropdown">
+          <button class="dropbtn">View Recepies
           <i class="fa fa-caret-down"></i>
-        </button>
-        <div class="dropdown-content">
+          </button>
+          <div class="dropdown-content">
           <a href="#">Decaf</a>
           <a href="#">Cold Brews</a>
           <a href="#">Hot Coffee</a>
         </div>
       </div> 
-      <a href="contactform.html">Contact</a>
-      <a href="#about">About</a>
+       <!-- Mini Game Button in Navigation Bar -->
+      <a href="minigame.html">Mini Game</a>
+       <!-- Contact Us in Navigation Bar -->
+      <a href="contactform.html">Contact Us</a>
+       <!-- About Button in Navigation Bar -->
+      <a href="about.html">About</a>
       <input type="text" placeholder="Search Coffee Recepies">
     </div>
     <hr>
@@ -51,36 +65,27 @@
       <div class="column">
       <img src="https://www.beanscenemag.com.au/wp-content/uploads/2021/11/Cold-Brew-coffee.jpg" alt="coffee" style="width:100%"><figcaption>Cold Brew</figcaption>
       </div>
-    </div>
-    <!-- Introduction Paragraph -->
-    <p><b>Coffee</b>, a brewed beverage made from roasted coffee beans, which are the seeds of berries from specificflowering plants in the Coffea genus,is a popular beverage worldwide. </p>
-    <hr>
-        <h2>Types of Coffee</h2>
-<p>Cofee is of many types which are as follows:</p>
-<ol>
-<li>Black Coffee</li>
-<li>Decaf</li>
-<li>Espresso</li>
-<li>Latte</li>
-<li>Cappucino</li>
-<li>Machhiato</li>
-<li>Americano</li>
-<li>Flat White</li>
-<li>Irsih Coffee</li> 
-<li>Cold Brew
-<ul>
-<li>Iced Coffee</li>
-<li>Iced Latte</li>
-</ul> 
-</li>
-</ol>
-<hr>
-<p><a href="https://www.googleadservices.com/pagead/aclk?sa=L&ai=DChcSEwjgkr-AkZT5AhUlKXIKHbMqANsYABAUGgJzZg&ae=2&ohost=www.google.com&cid=CAESbeD2MTWqOXww0dJiw2sdHLLWjge4oNFamG-VEtj3PRHq6SZdILuTV5W_U04n5VMISSJSqRQHDH6DTzzKadRD0dDkdwOcgkzcXfK_wZiFhxY-at7Jr3fB3VVg_jUCnOTlj4KoMhd2QiJj3trrTYk&sig=AOD64_3rhuheWuyGwQmVGaOntxm30jlXFA&q&adurl&ved=2ahUKEwjYu7aAkZT5AhWJRmwGHZAfCI0Q0Qx6BAgDEAE">ClickHere</a> to Order Coffee Beans Online</p>
-<hr>
-<button type="button"
-onclick="document.getElementById('demo').innerHTML = Date()">
-Check Date and Time.</button>
-<p id="demo"></p>
+      </div>
+      <!-- Introduction Paragraph -->
+      <p><b>Coffee</b>, a brewed beverage made from roasted coffee beans, which are the seeds of berries from specificflowering plants in the Coffea genus,is a popular beverage worldwide. </p>
+      <hr>
+      <button type="button"
+      onclick="document.getElementById('demo').innerHTML = Date()">
+      Check Date and Time.</button>
+      <p id="demo"></p>
    
-</body>
+  </body>
 </html>
+<!-- script for List Rendering on Header above Navigation Bar -->
+<script>
+  new Vue({
+el: "#name",
+data(){
+  return{
+      message:" Welcome Home ",
+      name: "" ,
+      items: [{ message: 'A'}, { message: 'B'}, {message: 'C'}]
+ }
+}
+}); 
+</script>
