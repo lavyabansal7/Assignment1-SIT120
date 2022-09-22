@@ -1,15 +1,22 @@
+/* This is the CSS file for Main Body of the Webpage */
+
+/* Background Color */
 body{background-color: burlywood;}
 
+/* h1 color */
 h1 {color: black;
   text-align: center;
 }
 
+/* <p> Paragraph Tag Color */
 p{color:black}
 
+/* Font Family */
 {margin: 0 ;
 font-family:Arial, Helvetica, sans-serif;
 }
 
+/* Navigation Bar Settings*/
 .topnav input[type=text] {
   float: left;
   padding: 6px;
@@ -37,12 +44,12 @@ font-family:Arial, Helvetica, sans-serif;
   background-color: #ddd;
   color: black;
 }
-
+/* color of the navigation bar menu option when user takes it mouse on it */
 .topnav a.active {
   background-color: brown;
   color: white;
 }
-
+/* Dropdown Button in Navigation Bar */
 .dropdown {
   float: right;
   overflow: hidden;
@@ -88,7 +95,7 @@ font-family:Arial, Helvetica, sans-serif;
 .dropdown:hover .dropdown-content {
   display: block;
 }
-
+/* Images Styling */
 img{  display: block;
 margin-left: auto;
 margin-right: auto;}
@@ -105,6 +112,7 @@ margin-right: auto;}
     clear: both;
     display: table;
   }
+  /* Image Caption Settings */
   figcaption {
     background-color: black;
     color: white;
