@@ -75,6 +75,21 @@
       onclick="document.getElementById('demo').innerHTML = Date()">
       Check Date and Time.</button>
       <p id="demo"></p>
+      <div id="app">
+      <h1>Your Coffee Essentials</h1>
+      <todo-item>
+      Coffee Beans
+      <template #description>
+        <p>Finely Roasted, and fresh</p>
+      </template>
+      </todo-item>
+      <todo-item>Iced Cold Milk for Cold Brews</todo-item>
+      <todo-item>Milk Frother</todo-item>
+      <todo-item>Sugar</todo-item>
+      <todo-item>Ice</todo-item>
+      <p>Add Extra Ice, Only use if you love Chills..</p>
+    </div>
+
    
   </body>
 </html>
@@ -91,3 +106,26 @@ data(){
 }
 }); 
 </script>
+
+<!-- script for Slots under Introduction Paragraph -->
+<script type="text/x-template" id="todo-item-template">
+  <div>
+    <input type="checkbox" v-model="done">
+    <span :class="{ done }">
+      <slot></slot>
+    </span>
+    <slot name="description"></slot>
+
+  </div>
+</script>
+<style>
+  .done{
+    color:black;
+    text-decoration: line-through;
+  }
+</style>
+<!-- Script Src is used the one available on vueschool.io -->
+<script src="https://unpkg.com/vue@3"></script>
+
+<script src="main.js"></script>
+</body>
