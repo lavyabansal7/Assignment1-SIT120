@@ -4,6 +4,7 @@ h1 {color: black;
   }
 p{color:black;
     text-align: center;}
+    /* will make a container around it */
 .container { 
         height: 200px;
         position: relative;

@@ -20,9 +20,9 @@
            <p>A cup of coffee, a moment of your time.</p>
         </div>
      
-     </section>
+         </section>
 
-     <section class="facility">
+         <section class="facility">
 
         <div class="heading">
            <img src="images/heading-img.png" alt="">
@@ -52,5 +52,32 @@
         </div>
      
      </section>
+     <!-- Implementing Porps -->
+     <div id="app" class="container mx-auto py-6">
+      <div class="content">
+        <h1 class="title">About Developer</h1>
+  
+        <h2 class="subtitle">
+         This app has been Developed by Lavya Bansal, who is proud to be a student of Deakin University. 
+        </h2>
+  
+        <div class="plans">
+          <plan v-for="plan in plans" :name="plan"></plan>
+        </div>
+      </div>
+    </div>
+  
+    <script type="text/x-template" id="plan-template">
+      <div class="plan">
+          <div class="description">
+            <span class="title">
+              {{name}}
+            </span>
+          </div>
+        </div>
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.7.4/dist/vue.js"></script>
+    <script src="about.js"></script>
+  
 </body>
 </html>

@@ -1,3 +1,4 @@
+/* Contact Form CSS  */
 *{
     margin: 0;
     padding: 0;
@@ -22,7 +23,7 @@ form{
     max-width: 600px;
     border-radius: 10px;
 }
-/* Contact Form CSS  */
+
 form h3{
     color: black;
     font-weight: 800;
