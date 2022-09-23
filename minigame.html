@@ -7,10 +7,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mini Game</title>
     <link href="minigame.css" rel="stylesheet"/>
-    <script src="https://cdn.jsdelivr.net/npm/vue@2.7.4/dist/vue.js"></script>
+    <script src= "https://cdn.jsdelivr.net/npm/vue@2.7.4/dist/vue.js" ></script>
 </head>
-<body>
+<body>  
     <div id="vue-app">
+        <h2>{{message | to-uppercase}}</h2>
+    </div>
+    <div id="app">  
         <h1>Mini Game</h1>
         <div class="container">
         <div class="center">
@@ -19,6 +22,7 @@
             <p>A - {{a}} </p>
             <p>B - {{b}} </p>
     </div>
+    
     <script src="minigame.js"></script>
 </body>
 </html>

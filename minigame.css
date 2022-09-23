@@ -2,6 +2,9 @@ body{background-color: burlywood;}
 h1 {color: black;
     text-align: center;
   }
+h2 {color: black;
+    text-align: center;
+  }
 p{color:black;
     text-align: center;}
     /* will make a container around it */
