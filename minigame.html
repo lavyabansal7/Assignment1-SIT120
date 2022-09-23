@@ -10,6 +10,7 @@
     <script src= "https://cdn.jsdelivr.net/npm/vue@2.7.4/dist/vue.js" ></script>
 </head>
 <body>  
+    <!-- filters -->
     <div id="vue-app">
         <h2>{{message | to-uppercase}}</h2>
     </div>
@@ -17,6 +18,7 @@
         <h1>Mini Game</h1>
         <div class="container">
         <div class="center">
+            <!--Event Handling  -->
             <button v-on:click="a++">Number of Times you clicked A</button>
             <button v-on:click="b++">Number of Times you Clicked B</button>
             <p>A - {{a}} </p>
