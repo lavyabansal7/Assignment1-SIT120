@@ -8,3 +8,15 @@ new Vue({
 },
 );
 
+Vue.filter('to-uppercase',function(value){
+    return value.toUpperCase(
+
+    )
+    });
+
+new Vue({
+    el:'#app',
+    data:{
+        message:"Hope"
+    }
+})
