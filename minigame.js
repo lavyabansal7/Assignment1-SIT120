@@ -18,3 +18,4 @@ new Vue({
         message: 'hope you enjoy'
     },
 })
+// this is the final file

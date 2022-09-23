@@ -11,6 +11,7 @@
     <title>Beta</title>
 </head>
 <body>
+  <!-- Transitions Effects -->
     <div id="beta">
         <button v-on:click="show = !show">
           Click Here 
@@ -19,6 +20,13 @@
           <p v-if="show">Hi, You are using Beta Functions of This Website. Press Click Here to Hide or show this Dialogue Box.</p>
         </transition>
       </div>
+      <!-- Custom Directives -->
+      <div id="dynamicexample">
+        <p id="dynamic" v-pin:[direction]="200">😛😝</p>
+      </div>
       <script src="beta.js"></script>
+
+
 </body>
 </html>
+<!-- this is the final file -->

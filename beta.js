@@ -5,3 +5,4 @@ new Vue({
       show: true
     }
   })
+  // this is the final file
