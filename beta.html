@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="beta.css">
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.7.4/dist/vue.js"></script>
+
+    <title>Document</title>
+</head>
+<body>
+    <div id="demo">
+        <button v-on:click="show = !show">
+          Click Here 
+        </button>
+        <transition name="fade">
+          <p v-if="show">Hi, You are using Beta Functions of This Website. Press Click Here to Hide or show this Dialogue Box.</p>
+        </transition>
+      </div>
+      <script src="beta.js"></script>
+</body>
+</html>
