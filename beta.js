@@ -1,5 +1,5 @@
 new Vue({
-    el: '#demo',
+    el: '#beta',
     data: {
       show: true
     }
